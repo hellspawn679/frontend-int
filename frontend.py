@@ -59,7 +59,7 @@ if st.button('Send to FastAPI'):
     st.write(file_data["data"])
     if file_data is not None:
         try:
-            response = requests.post('http://main.dev:80/upload/', json=file_data)
+            response = requests.post('https://backend-wqfp.onrender.com/upload/', json=file_data)
             
         except Exception as e:
             st.write("Error:", e)

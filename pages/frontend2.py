@@ -25,7 +25,7 @@ chat_box.init_session()
 chat_box.output_messages()
 
 if query := st.chat_input('input your question here'):
-    response = requests.post('http://main.dev:80/qna/', json={"querie":query})
+    response = requests.post('https://backend-wqfp.onrender.com/qna/', json={"querie":query})
     print()
     chat_box.user_say(response.json()['response'])
     if streaming:
