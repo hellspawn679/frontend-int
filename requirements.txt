@@ -1,0 +1,8 @@
+docx2txt==0.8
+pdfplumber==0.10.3
+Requests==2.31.0
+simplejson==3.19.2
+streamlit==1.29.0
+streamlit_chatbox==1.1.11
+
+
